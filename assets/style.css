@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.gpt-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+/*     box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    text-align: center;
+}
+
+.gpt-table-container {
+    margin-top: 20px;
+	overflow-x: scroll;
+	scrollbar-width:none;
+}
+
+.gpt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gpt-table th, .gpt-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+	font-size: 18px
+}
+
+.gpt-table th {
+    background-color: #28a745;
+    color: white;
+}
+
+.gpt-next-prayer-wrapper {
+    margin-bottom: 20px;
+}
+
+.gpt-sun-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gpt-sunrise-box, .gpt-sunset-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.gpt-sunrise-box {
+    background-color: #ffe5b4;
+    color: #d35400;
+}
+
+.gpt-sunset-box {
+    background-color: #ffe5b4;
+    color: #d35400;
+}
+.gpt-table tr.highlight-gpt {
+    border: 3px solid #28a745 !important; /* Light green background */
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) { /* Adjust for mobile devices */
+    .gpt-table th, .gpt-table td {
+        font-size: 14px !important;
+		padding:7px !important
+    }
+}
